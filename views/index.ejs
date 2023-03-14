@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script defer src="/js/index.js"></script>
+</head>
+<body>
+    <form action="/trip" method="get" style="text-align: center;">
+        <h1>Welcome to the Trip Planner</h1>
+        <h4>Where do you want to go?</h4>
+        <input type="text" name="txtLocations" id="txtLocations" size="80" style="margin-bottom: 1.5rem; ">
+        <br>
+        <input id = "btnSubmit" type="submit" value="Make My Trip!">
+    </form>
+
+
+    <div id="weatherSection" style="margin-left: 4rem;">
+        <div id="summarySection"  style="display: none;">
+            <h1>Your Summary Trip</h1>
+            <p>Total Distance: <span class="tDistance"></span> miles</p>
+            <p>Total Time: <span class="tTime"></span></p>
+    
+        </div>
+       
+    </div>
+</body>
+</html>
